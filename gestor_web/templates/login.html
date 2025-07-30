@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h2>Inicia Sesion</h2>
+    {% if error %}
+    <p style="color:red;">{{ error }}</p>
+    {% endif %}
+    <form method="POST">
+        <input type="password" name="password" placeholder="Contraseña maestra" required>
+        <button type="submit">Entrar</button>
+    </form>
+</body>
+</html>
+ 
